@@ -13,6 +13,56 @@
 		font-weight: 400;
 		color: #0b0a4a;
 	}
+
+
+
+	/* General styles for all devices */
+
+	/* Styles for tablets and larger screens */
+	@media (min-width: 768px) {
+    #page {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #content {
+        width: 70%;
+    }
+    
+    #sidebar {
+        width: 30%;
+    }
+	}
+
+	/* Styles for mobile devices */
+	@media (max-width: 767px) {
+    #page {
+        display: block;
+    }
+
+    #content,
+    #sidebar {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #menu ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    #menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .image-full {
+        width: 100%;
+        height: auto;
+    }
+	}
+
 	
 	
 	h1, h2, h3
